@@ -27,3 +27,24 @@ now run the terminal
 software developer/engineers don't like to repeat themselves because we don't wanna run
 tsc every time in the terminal. So the ts there is a flag we can put after the tsc in the terminal
 to watch the changes the ts files and compiled them every time for us
+
+#------
+concurrent compilation and execution
+Now, our project is going to be about sorting and our work is not gonna be on the browser.
+we need a way to the run the complied file which is easy we can use the node command line in the terminal and happy days
+run the terminal
+<strong>
+node + "./path of the file"
+</strong>
+again this is a waste of time and also we have other people work their ass off to make easier for use
+let's create a .json file and install 2 packages <bold>nodemon</bold> & <bold>concurrently</bold>
+
+<bold>nodemon</bold>: is responsible to execute our code in index.js
+<bold>concurrently</bold> is responsible to compiled our code in index.ts
+
+now, we should configure the package.json
+"script": {
+"start:build:"tsc -w" to compile the ts files
+"start:run: "nodemon build/index.js" to run the code
+"start" : "concurrently npm:start:\*" run 2 script at the same time node and ts code
+}
