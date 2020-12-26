@@ -1,5 +1,5 @@
 {
-  "name": "design-pattren-with-TS",
+  "name": "design-pattern-with-TS",
   "version": "1.0.0",
   "description": "To compile the index.ts to index.js , all we have to do is to run this command in the terminal tsc + the path of the file",
   "main": "index.js",
