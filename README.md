@@ -48,3 +48,23 @@ now, we should configure the package.json
 "start:run: "nodemon build/index.js" to run the code
 "start" : "concurrently npm:start:\*" run 2 script at the same time node and ts code
 }
+
+##--------
+sometime , we have more than one type, in this case we are gonna use the |
+so our function/methods will return one of the types we are gonna deal with but we don't know which one. in this case, ts provide something called a type guard
+function sort(collection: number[] | string){
+here we have 2 types and we dont know which one the client is going to use. Here it comes the type of the life guard
+if(collection instanceof Array ){
+do something
+instanceof works with every other types rather than the once that the typeof is working with
+}
+
+    if(typeof collection === "string"){
+        do something
+        note
+        typeof works with string , number , boolean and symbol
+    }
+
+}
+
+don't forget what the | is doing under the hood, it is taking the 2 types and looking for something to common in their properties and compare them if it find at least one common area.
