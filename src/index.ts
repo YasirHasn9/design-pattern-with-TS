@@ -60,8 +60,15 @@
 //                     // now , ts knows that collection must be an array
 import { Sorter } from "./sorter";
 import {NumberCollection} from "./NumberCollection"
+import {CharactersCollection} from "./CharactersCollection"
+import {LinkedList} from "./LinkedList"
 
-let numberCollection = new NumberCollection([10,3,-5,0])
-let sorted = new Sorter(numberCollection)
-sorted.sort()
-console.log("sorted",numberCollection.data)
+// let numberCollection = new NumberCollection([10,3,-5,0])
+// let sorted = new Sorter(numberCollection)
+// sorted.sort()
+// console.log("sorted",numberCollection.data)
+
+// let newString = new CharactersCollection("Yasir")
+// let sorted = new Sorter(newString)
+// sorted.sort()
+// console.log(newString.data)

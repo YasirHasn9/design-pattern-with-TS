@@ -68,3 +68,16 @@ instanceof works with every other types rather than the once that the typeof is 
 }
 
 don't forget what the | is doing under the hood, it is taking the 2 types and looking for something to common in their properties and compare them if it find at least one common area.
+
+<h2>Interface</h2>
+I have read a lot of articles about ts saying , yes ts is great because we can make interfaces to describe 
+the structure of an object? 
+well , that technically true but interfaces are useful not because we can describe a type , its because we 
+can set up a contract one class with another class and hey if you do X Y Z , imagine all the functionality
+im gonna give you.
+
+<h3>Also</h3>
+Ts dose not care about the implementation , it cares about the type
+
+<h3>Void</h3>
+when the function does not return anything, or something is not useful

@@ -9,7 +9,7 @@ var Sorter = /** @class */ (function () {
         var length = this.collection.length; // --> const length = this.collection.length
         for (var i = 0; i < length; i++) {
             for (var j = 0; j < length - i - 1; j++) {
-                if (this.collection.comparing(j, j + 1)) {
+                if (this.collection.compare(j, j + 1)) {
                     this.collection.swap(j, j + 1);
                 }
             }

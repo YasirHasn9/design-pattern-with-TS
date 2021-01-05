@@ -24,7 +24,7 @@ var NumberCollection = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
-    NumberCollection.prototype.comparing = function (leftIndex, rightIndex) {
+    NumberCollection.prototype.compare = function (leftIndex, rightIndex) {
         return this.data[leftIndex] > this.data[rightIndex];
     };
     NumberCollection.prototype.swap = function (leftIndex, rightIndex) {
